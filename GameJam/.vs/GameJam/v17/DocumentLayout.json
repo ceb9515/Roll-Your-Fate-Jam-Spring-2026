@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Fenne\\source\\repos\\Roll-Your-Fate-Jam-Spring-2026\\GameJam\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|c:\\users\\fenne\\source\\repos\\roll-your-fate-jam-spring-2026\\gamejam\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|solutionrelative:dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|c:\\users\\fenne\\source\\repos\\roll-your-fate-jam-spring-2026\\gamejam\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|c:\\users\\fenne\\source\\repos\\roll-your-fate-jam-spring-2026\\gamejam\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|solutionrelative:button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|c:\\users\\fenne\\source\\repos\\roll-your-fate-jam-spring-2026\\gamejam\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|solutionrelative:dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C182F3C3-EEA0-4CD9-B164-DD7CBD31702A}|GameJam.csproj|c:\\users\\fenne\\source\\repos\\roll-your-fate-jam-spring-2026\\gamejam\\bag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\Fenne\\source\\repos\\Roll-Your-Fate-Jam-Spring-2026\\GameJam\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
@@ -44,16 +44,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Dice.cs",
               "DocumentMoniker": "C:\\Users\\Fenne\\source\\repos\\Roll-Your-Fate-Jam-Spring-2026\\GameJam\\Dice.cs",
               "RelativeDocumentMoniker": "Dice.cs",
               "ToolTip": "C:\\Users\\Fenne\\source\\repos\\Roll-Your-Fate-Jam-Spring-2026\\GameJam\\Dice.cs",
               "RelativeToolTip": "Dice.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwG8AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwG8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-22T01:31:07.808Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Button.cs",
               "DocumentMoniker": "C:\\Users\\Fenne\\source\\repos\\Roll-Your-Fate-Jam-Spring-2026\\GameJam\\Button.cs",
               "RelativeDocumentMoniker": "Button.cs",
