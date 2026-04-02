@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace GameJam
 {
@@ -11,12 +9,13 @@ namespace GameJam
     // Contains the dice not currently in use by the player.
     internal class Bag
     {
-        private List<Dice> common;
-        private List<Dice> uncommon;
-        private List<Dice> rare;
-        private List<Dice> legendary;
+        // Different rarities of dice.
+        private readonly List<Dice> common;
+        private readonly List<Dice> uncommon;
+        private readonly List<Dice> rare;
+        private readonly List<Dice> legendary;
 
-        private Random rng = new();
+        private readonly Random rng = new();
 
         public Bag()
         {
@@ -30,32 +29,66 @@ namespace GameJam
         /// Pulls a dice from the bag with varying rarity.
         /// </summary>
         /// <returns> A dice from the bag. </returns>
-        public Dice Pull()
+        public Dice Pull(params Dice[] owned)
         {
             int pullTemp = rng.Next(1, 201);
+            bool same;
+            List<Dice> rarity;
 
             // 70% for common dice.
             if(pullTemp <= 140)
             {
-                return common[rng.Next(0, common.Count)];
+                rarity = common;
             }
 
             // 22.5% for uncommon dice.
             else if(pullTemp <= 185)
             {
-                return uncommon[rng.Next(0, uncommon.Count)];
+                rarity = uncommon;
             }
 
             // 7% for rare dice.
             else if (pullTemp <= 199)
             {
-                return rare[rng.Next(0, rare.Count)];
+                rarity = rare;
             }
 
             // 0.5% for legendary dice.
             else
             {
-                return legendary[rng.Next(0, legendary.Count)];
+                rarity = legendary;
+            }
+
+            // Make sure it's a unique dice before returning.
+            while(true)
+            {
+                // Generate random dice.
+                pullTemp = rng.Next(0, rarity.Count);
+                same = false;
+
+                // Check if this dice has already been pulled, or the player already has it.
+                foreach(Dice die in owned)
+                {
+                    if(rarity[pullTemp] == die)
+                    {
+                        same = true;
+                        break;
+                    }
+                }
+
+                // If it is, pull a new dice.
+                if(same)
+                {
+                    continue;
+                }
+
+                // If it's a unique dice, but it's a special dice, reset it.
+                if(rarity[pullTemp].Special == Dice.SpecialEffect.Chalkboard || rarity[pullTemp].Special == Dice.SpecialEffect.Explosive)
+                {
+                    rarity[pullTemp].SpecialReset();
+                }
+
+                return rarity[pullTemp];
             }
         }
 
@@ -63,6 +96,7 @@ namespace GameJam
         {
             foreach(Dice die in dice)
             {
+                die.Rarity = "Common";
                 common.Add(die);
             }
         }
@@ -71,6 +105,7 @@ namespace GameJam
         {
             foreach (Dice die in dice)
             {
+                die.Rarity = "Uncommon";
                 uncommon.Add(die);
             }
         }
@@ -79,6 +114,7 @@ namespace GameJam
         {
             foreach (Dice die in dice)
             {
+                die.Rarity = "Rare";
                 rare.Add(die);
             }
         }
@@ -87,6 +123,7 @@ namespace GameJam
         {
             foreach (Dice die in dice)
             {
+                die.Rarity = "Legendary";
                 legendary.Add(die);
             }
         }

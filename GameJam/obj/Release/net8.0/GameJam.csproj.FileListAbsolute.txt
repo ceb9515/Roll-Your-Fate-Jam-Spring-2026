@@ -59,11 +59,6 @@ C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\n
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\spaaaace.ogg
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\spaaaace.xnb
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Tabletop.xnb
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\GameJam.exe
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\GameJam.deps.json
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\GameJam.runtimeconfig.json
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\GameJam.dll
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\GameJam.pdb
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\MonoGame.Framework.dll
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\NVorbis.dll
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\runtimes\android-arm\native\libopenal.so
@@ -88,8 +83,63 @@ C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\n
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\GameJam.csproj.CoreCompileInputs.cache
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\GameJam.sourcelink.json
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\GameJam.csproj.Up2Date
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\GameJam.dll
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\refint\GameJam.dll
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\GameJam.pdb
 C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\GameJam.genruntimeconfig.cache
-C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\ref\GameJam.dll
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\DiceDisplayFrame.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\chalkboardD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\chalkboardD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\chalkboardD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\chalkboardD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\chalkboardD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\Custom\fibonacci.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\Custom\golden.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\Custom\octopus.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\explosiveD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\explosiveD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\explosiveD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\explosiveD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\explosiveD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\floweredD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\floweredD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\floweredD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\floweredD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\floweredD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\frozenD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\frozenD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\frozenD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\frozenD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\frozenD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rainbowD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rainbowD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rainbowD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rainbowD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rainbowD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rounderD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rounderD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rounderD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rounderD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\rounderD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\trioD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\trioD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\trioD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\trioD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\trioD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\weightedD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\weightedD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\weightedD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\weightedD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\weightedD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\yyD12.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\yyD20.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\yyD4.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\yyD6.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\Dice\yyD8.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Content\SmallJersey10.xnb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Rollin' With Hunkus Punkus.exe
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Rollin' With Hunkus Punkus.deps.json
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Rollin' With Hunkus Punkus.runtimeconfig.json
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Rollin' With Hunkus Punkus.dll
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\bin\Release\net8.0\Rollin' With Hunkus Punkus.pdb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\Rollin' With Hunkus Punkus.dll
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\refint\Rollin' With Hunkus Punkus.dll
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\Rollin' With Hunkus Punkus.pdb
+C:\Users\Fenne\source\repos\Roll-Your-Fate-Jam-Spring-2026\GameJam\obj\Release\net8.0\ref\Rollin' With Hunkus Punkus.dll

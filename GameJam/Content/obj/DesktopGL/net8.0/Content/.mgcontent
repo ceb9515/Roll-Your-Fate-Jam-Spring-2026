@@ -14,21 +14,54 @@
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/avalancheD4.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/avalancheD6.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/avalancheD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/chalkboardD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/chalkboardD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/chalkboardD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/chalkboardD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/chalkboardD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/Custom/fibonacci.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/Custom/golden.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/Custom/octopus.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/dangerD12.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/dangerD20.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/dangerD4.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/dangerD6.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/dangerD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/explosiveD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/explosiveD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/explosiveD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/explosiveD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/explosiveD8.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/fickleD12.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/fickleD20.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/fickleD4.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/fickleD6.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/fickleD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/floweredD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/floweredD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/floweredD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/floweredD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/floweredD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/frozenD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/frozenD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/frozenD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/frozenD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/frozenD8.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/galaxyD12.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/galaxyD20.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/galaxyD4.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/galaxyD6.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/galaxyD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rainbowD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rainbowD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rainbowD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rainbowD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rainbowD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rounderD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rounderD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rounderD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rounderD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/rounderD8.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/spaceD12.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/spaceD20.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/spaceD4.png</File>
@@ -44,11 +77,29 @@
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/standardD4.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/standardD6.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/standardD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/trioD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/trioD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/trioD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/trioD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/trioD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/weightedD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/weightedD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/weightedD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/weightedD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/weightedD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/yyD12.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/yyD20.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/yyD4.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/yyD6.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Dice/yyD8.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/DiceDisplayFrame.png</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/hunkTitle.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Hunkus.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/HunkusPortrait.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/LargeJersey10.spritefont</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/logo.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/MediumJersey10.spritefont</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SmallJersey10.spritefont</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad1.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad2.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad3.wav</File>
@@ -66,6 +117,57 @@
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Tabletop.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

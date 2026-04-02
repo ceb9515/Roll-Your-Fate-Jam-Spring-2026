@@ -15,12 +15,13 @@ namespace GameJam
     /// <param name="font"> The font being used to label the button. </param>
     /// <param name="location"> Where the button is located. </param>
     /// <param name="hitbox"> The invisible hitbox of the button. </param>
-    internal class Button(string label, SpriteFont font, Vector2 location, Rectangle hitbox)
+    internal class Button(string label, SpriteFont font, Vector2 location, Color color)
     {
         readonly string label = label; // The button's label.
         readonly SpriteFont font = font; // The font being used to write the label of the button.
         readonly Vector2 location = location; // The location we're drawing the button at.
-        readonly Rectangle hitbox = hitbox; // The hitbox of the button.
+        readonly Rectangle hitbox = new((int)location.X, (int)location.Y + 7, (int)font.MeasureString(label).X, (int)(font.MeasureString(label).Y * 0.8f)); // The hitbox of the button.
+        readonly Color color = color; // The color of the button.
         bool hovering = false; // Whether or not the player is hovering over the button.
         bool holding = false; // Whether or not the player is holding the left mouse button down.
 
@@ -57,20 +58,20 @@ namespace GameJam
                 // If the player is holding down on the button, draw it with a specific color.
                 if (holding)
                 {
-                    sb.DrawString(font, label, location, Color.DarkSlateGray);
+                    sb.DrawString(font, label, location, color * Color.Gray);
                 }
 
                 // If the player is not holding down on the button, draw it with a specific color.
                 else
                 {
-                    sb.DrawString(font, label, location, Color.LightSlateGray);
+                    sb.DrawString(font, label, location, color * Color.DarkGray);
                 }
             }
 
             // If the button is not being hovered over, draw it with a specific color.
             else
             {
-                sb.DrawString(font, label, location, Color.White);
+                sb.DrawString(font, label, location, color);
             }
         }
     }
