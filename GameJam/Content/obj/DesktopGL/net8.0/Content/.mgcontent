@@ -100,23 +100,91 @@
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/logo.png</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/MediumJersey10.spritefont</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SmallJersey10.spritefont</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad1.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad2.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad3.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Bad4.wav</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/click.mp3</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/diceRoll1.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/diceRoll2.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/diceRoll3.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/diceRoll4.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/diceRoll5.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Good1.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Good2.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Good3.wav</File>
-    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/Good4.wav</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_HunkusClick1.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_HunkusClick2.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_HunkusClick3.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss1.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss2.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss3.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss4.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss5.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss6.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss7.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Loss8.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_LostOnRoundOne1.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_LostOnRoundOne2.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_LostOnRoundOne3.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_LostOnRoundOne4.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne1.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne2.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne3.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne4.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne5.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne6.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne7.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalOne8.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty1.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty2.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty3.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty4.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty5.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty6.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty7.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_NaturalTwenty8.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_RealBadRoll.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Sneeze.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win1.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win2.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win3.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win4.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win5.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win6.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win7.m4a</File>
+    <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/SoundEffects/RWHP_Win8.m4a</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/spaaaace.wav</File>
     <File>C:/Users/Fenne/source/repos/Roll-Your-Fate-Jam-Spring-2026/GameJam/Content/Tabletop.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

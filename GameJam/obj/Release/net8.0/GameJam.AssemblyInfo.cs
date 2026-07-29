@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rollin\' With Hunkus Punkus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41778491e208768a0dec9d09158ee2be794e3d6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fca86e84ec92ebb89af7fa37b5c5d977c416d5e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rollin\' With Hunkus Punkus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rollin\' With Hunkus Punkus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

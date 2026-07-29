@@ -17,7 +17,7 @@ namespace GameJam
     {
         // CURRENT VERSION INFO
         private readonly int currentVersion = 64203320;
-        private readonly string versionDisplay = $"1.2";
+        private readonly string versionDisplay = $"1.3";
         // CURRENT VERSION INFO
 
         #region Utils
@@ -37,6 +37,9 @@ namespace GameJam
 
         #endregion
 
+        /// <summary>
+        /// All possible states the game can be in.
+        /// </summary>
         enum GameState
         {
             Menu,
@@ -46,14 +49,19 @@ namespace GameJam
         }
         GameState gameState;
 
-        enum VoiceLine
+        /// <summary>
+        /// All kinds of voice lines in the game.
+        /// </summary>
+        public enum VoiceLine
         {
             WonARound,
             Lose,
             NaturalTwenty,
             NaturalOne,
-            EasterEgg1,
-            EasterEgg2,
+            Title,
+            Portrait,
+            RealBadRoll,
+            LostOnRoundOne,
         }
 
         #region Draw Locations
@@ -83,6 +91,8 @@ namespace GameJam
         #endregion
 
         private bool rolled;
+        private bool sneeze;
+        private bool titleEasterEgg;
         private int rollTotal;
         private int targetScore;
         private readonly List<Dice> dice = [];
@@ -240,8 +250,14 @@ namespace GameJam
         #endregion
         private Song backgroundTrack;
         private SoundEffect[] rollNoises;
-        private SoundEffect[] goodLines;
-        private SoundEffect[] badLines;
+        private SoundEffect[] nat20Lines;
+        private SoundEffect[] nat1Lines;
+        private SoundEffect[] roundWinLines;
+        private SoundEffect[] gameOverLines;
+        private SoundEffect[] titleEasterEggLines;
+        private SoundEffect gamePortraitEasterEgg;
+        private SoundEffect realBadRoll;
+        private SoundEffect[] lostOnRoundOne;
         #endregion
 
         /// <summary>
@@ -269,6 +285,8 @@ namespace GameJam
             gameState = GameState.Menu;
 
             rolled = false;
+            sneeze = false;
+            titleEasterEgg = false;
             rollTotal = 0;
             highestRoundRoll = 0;
             targetScore = 15;
@@ -278,8 +296,12 @@ namespace GameJam
             multiplying = false;
             frozen = false;
             rollNoises = new SoundEffect[5];
-            goodLines = new SoundEffect[4];
-            badLines = new SoundEffect[4];
+            nat20Lines = new SoundEffect[8];
+            nat1Lines = new SoundEffect[8];
+            roundWinLines = new SoundEffect[8];
+            gameOverLines = new SoundEffect[8];
+            lostOnRoundOne = new SoundEffect[4];
+            titleEasterEggLines = new SoundEffect[3];
             backDarken = new(50, 50, 50);
 
             // Load saved data.
@@ -331,7 +353,7 @@ namespace GameJam
             screen = new(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
             backdrop = new(0, 0, 640, 360);
             hunkusFrame = new(512, 0, 128, 128);
-            // hunkusPortraitFrame = new(0, 100, 192, 248);
+            hunkusPortraitFrame = new(200, 180, 230, 180);
             // logoframe = new(180, 30, 360, 180);
             skipButtonFlavorVec = new(420, 290);
             totalDrawVec = new(435, 210);
@@ -506,11 +528,22 @@ namespace GameJam
             {
                 rollNoises[i] = Content.Load<SoundEffect>($"SoundEffects/diceRoll{i + 1}");
             }
-            for(int i = 0; i < 4; i++)
+            for(int i = 0; i < 8; i++)
             {
-                goodLines[i] = Content.Load<SoundEffect>($"SoundEffects/Good{i + 1}");
-                badLines[i] = Content.Load<SoundEffect>($"SoundEffects/Bad{i + 1}");
+                nat20Lines[i] = Content.Load<SoundEffect>($"SoundEffects/RWHP_NaturalTwenty{i + 1}");
+                nat1Lines[i] = Content.Load<SoundEffect>($"SoundEffects/RWHP_NaturalOne{i + 1}");
+                gameOverLines[i] = Content.Load<SoundEffect>($"SoundEffects/RWHP_Loss{i + 1}");
+                roundWinLines[i] = Content.Load<SoundEffect>($"SoundEffects/RWHP_Win{i + 1}");
             }
+            for(int i = 0; i < 3; i++)
+            {
+                titleEasterEggLines[i] = Content.Load<SoundEffect>($"SoundEffects/RWHP_HunkusClick{i + 1}");
+                lostOnRoundOne[i] = Content.Load<SoundEffect>($"SoundEffects/RWHP_LostOnRoundOne{i + 1}");
+            }
+            lostOnRoundOne[3] = Content.Load<SoundEffect>($"SoundEffects/RWHP_LostOnRoundOne4");
+            gamePortraitEasterEgg = Content.Load<SoundEffect>($"SoundEffects/RWHP_Sneeze");
+            realBadRoll = Content.Load<SoundEffect>($"SoundEffects/RWHP_RealBadRoll");
+
 
             dice.Add(standardD20);
             dice.Add(standardD12);
@@ -553,6 +586,7 @@ namespace GameJam
                     if(playButton.Update(ms, pms, mScaled) || SingleKeyPress(Keys.Enter))
                     {
                         gameState = GameState.Game;
+                        titleEasterEgg = false;
                     }
 
                     if(quitButton.Update(ms, pms, mScaled) || SingleKeyPress(Keys.Escape))
@@ -560,9 +594,22 @@ namespace GameJam
                         Exit();
                     }
 
+                    if(hunkusPortraitFrame.Contains(mScaled) && SingleClick() && !titleEasterEgg)
+                    {
+                        PlayVoiceLine(VoiceLine.Title);
+                        titleEasterEgg = true;
+                    }
+
                     break;
 
                 case GameState.Game:
+
+                    // Hunkus sneeze easter egg.
+                    if(hunkusFrame.Contains(mScaled) && SingleClick() && !sneeze)
+                    {
+                        PlayVoiceLine(VoiceLine.Portrait);
+                        sneeze = true;
+                    }
 
                     // ROLL THE DICE AND CALCULATE THEIR TOTALS!!!
                     if((rollButton.Update(ms, pms, mScaled) || SingleKeyPress(Keys.Enter)) && !rolled)
@@ -575,129 +622,129 @@ namespace GameJam
 
                         // Roll each dice, and calculate rollTotal BEFORE multiplying.
                         foreach (Dice die in dice)
+                        {
+                            die.Roll();
+
+                            // Round totaler functionality.
+                            if(die.Special == Dice.SpecialEffect.RoundTotaler)
                             {
-                                die.Roll();
-
-                                // Round totaler functionality.
-                                if(die.Special == Dice.SpecialEffect.RoundTotaler)
-                                {
-                                    die.Value += round / 2;
-                                }
-
-                                // Frozen functionality P1.
-                                else if(die.Special == Dice.SpecialEffect.Frozen)
-                                {
-                                    frozen = true;
-                                }
-
-                                // Rainbow functionality P1.
-                                else if (die.Special == Dice.SpecialEffect.Rainbow)
-                                {
-                                    multiplying = true;
-                                }
-
-                                // Avalanche functionality.
-                                else if (die.Special == Dice.SpecialEffect.Avalanche)
-                                {
-                                    die.Value += rollTotal;
-                                }
-
-                                // Galaxy functionality P1.
-                                else if (die.Special == Dice.SpecialEffect.Galaxy)
-                                {
-                                    multiplying = true;
-                                    galaxyTicker++;
-                                }
-
-                                rollTotal += die.Value;
+                                die.Value += round / 2;
                             }
 
-                        // Octopus functionality P1.
-                        if(dice[2].Special == Dice.SpecialEffect.Octopus)
+                            // Frozen functionality P1.
+                            else if(die.Special == Dice.SpecialEffect.Frozen)
+                            {
+                                frozen = true;
+                            }
+
+                            // Rainbow functionality P1.
+                            else if (die.Special == Dice.SpecialEffect.Rainbow)
                             {
                                 multiplying = true;
                             }
 
+                            // Avalanche functionality.
+                            else if (die.Special == Dice.SpecialEffect.Avalanche)
+                            {
+                                die.Value += rollTotal;
+                            }
+
+                            // Galaxy functionality P1.
+                            else if (die.Special == Dice.SpecialEffect.Galaxy)
+                            {
+                                multiplying = true;
+                                galaxyTicker++;
+                            }
+
+                            rollTotal += die.Value;
+                        }
+
+                        // Octopus functionality P1.
+                        if(dice[2].Special == Dice.SpecialEffect.Octopus)
+                        {
+                            multiplying = true;
+                        }
+
                         // Handle special multiplication cases.
                         if(multiplying)
+                        {
+                            // Reset before multiplying.
+                            rollTotal = 0;
+
+                            // Rainbow dice functionality.
+                            for (int i = 0; i < 5; i++)
                             {
-                                // Reset before multiplying.
-                                rollTotal = 0;
-
-                                // Rainbow dice functionality.
-                                for (int i = 0; i < 5; i++)
+                                if (dice[i].Special == Dice.SpecialEffect.Rainbow)
                                 {
-                                    if (dice[i].Special == Dice.SpecialEffect.Rainbow)
+                                    for (int j = 4; j > i; j--)
                                     {
-                                        for (int j = 4; j > i; j--)
-                                        {
-                                            dice[i].Value *= dice[j].Value;
-                                        }
+                                        dice[i].Value *= dice[j].Value;
                                     }
                                 }
+                            }
 
-                                // Galaxy functionality P2.
-                                if (galaxyTicker > 0)
+                            // Galaxy functionality P2.
+                            if(galaxyTicker > 0)
+                            {
+                                // Resolve all Galaxy dice.
+                                for (int i = 0; i < galaxyTicker; i++)
                                 {
-                                    // Resolve all Galaxy dice.
-                                    for (int i = 0; i < galaxyTicker; i++)
-                                    {
-                                        foreach (Dice die in dice)
-                                        {
-                                            die.Value *= 4;
-                                        }
-                                    }
-                                    galaxyTicker = 0;
-                                }
-
-                                // Octopus functionality P2.
-                                if (dice[2].Special == Dice.SpecialEffect.Octopus)
-                                {
-                                    // Octuple all dice.
                                     foreach (Dice die in dice)
                                     {
-                                        die.Value *= 8;
+                                        die.Value *= 4;
                                     }
                                 }
+                                galaxyTicker = 0;
+                            }
 
-                                // Re-calculate rollTotal.
+                            // Octopus functionality P2.
+                            if(dice[2].Special == Dice.SpecialEffect.Octopus)
+                            {
+                                // Octuple all dice.
                                 foreach (Dice die in dice)
                                 {
-                                    rollTotal += die.Value;
+                                    die.Value *= 8;
                                 }
-
-                                multiplying = false;
                             }
+
+                            // Re-calculate rollTotal.
+                            foreach(Dice die in dice)
+                            {
+                                rollTotal += die.Value;
+                            }
+
+                            multiplying = false;
+                        }
 
                         // Frozen functionality P2.
                         if(frozen)
+                        {
+                            rollTotal = 0;
+                            for(int i = 0; i < dice.Count; i++)
                             {
-                                rollTotal = 0;
-                                for (int i = 0; i < dice.Count; i++)
+                                if(dice[i].Special == Dice.SpecialEffect.Frozen)
                                 {
-                                    if (dice[i].Special == Dice.SpecialEffect.Frozen)
+                                    for(int j = i + 1; j < dice.Count; j++)
                                     {
-                                        for (int j = i + 1; j < dice.Count; j++)
+                                        if(dice[j].Value < dice[i].Value)
                                         {
-                                            if (dice[j].Value < dice[i].Value)
-                                            {
-                                                dice[j].Value = dice[i].Value;
-                                            }
+                                            dice[j].Value = dice[i].Value;
                                         }
                                     }
                                 }
-                                // Recalculate again.
-                                foreach (Dice die in dice)
-                                {
-                                    rollTotal += die.Value;
-                                }
                             }
+                            // Recalculate again.
+                            foreach (Dice die in dice)
+                            {
+                                rollTotal += die.Value;
+                            }
+                        }
 
                         #region Nat 20s and 1s
                             // Double score on Nat 20.
                             if (dice[0].Max)
                             {
-                                PlayVoiceLine(true);
+                                PlayVoiceLine(VoiceLine.NaturalTwenty);
 
                                 // Golden Dice functionality.
                                 if (dice[0].Special == Dice.SpecialEffect.Golden)
@@ -715,34 +762,36 @@ namespace GameJam
                             // Half score on Nat 1.
                             else if (dice[0].Min && dice[0].Special != Dice.SpecialEffect.Golden)
                             {
-                                PlayVoiceLine(false);
+                                PlayVoiceLine(VoiceLine.NaturalOne);
                                 rollTotal /= 2;
                             }
                             #endregion
 
                         // Save highest roll this round.
                         if (rollTotal > highestRoundRoll)
-                            {
-                                highestRoundRoll = rollTotal;
-                            }
+                        {
+                            highestRoundRoll = rollTotal;
+                        }
                     }
 
+                    // Handle everything that happens after a roll.
                     if(rolled)
                     {
-                        if (rollTimer <= 0)
+                        if(rollTimer <= 0)
                         {
                             rolled = false;
 
-                            if (rollTotal >= targetScore)
+                            if(rollTotal >= targetScore)
                             {
                                 rollTotal = 0;
                                 round++;
                                 targetScore = (int)(targetScore * 1.25);
+                                sneeze = false;
 
                                 // 20% chance to play a voice line when they win a round.
-                                if(rng.Next(1, 6) == 1)
+                                if(rng.Next(1, 6) == 1 && !dice[0].Max)
                                 {
-                                    PlayVoiceLine(true);
+                                    PlayVoiceLine(VoiceLine.WonARound);
                                 }
 
                                 // Reset dice values.
@@ -762,7 +811,18 @@ namespace GameJam
                             // They lost.
                             else
                             {
-                                PlayVoiceLine(false);
+                                if(round == 1)
+                                {
+                                    PlayVoiceLine(VoiceLine.LostOnRoundOne);
+                                }
+                                else if(rollTotal <= -100)
+                                {
+                                    PlayVoiceLine(VoiceLine.RealBadRoll);
+                                }
+                                else if(!dice[0].Min)
+                                {
+                                    PlayVoiceLine(VoiceLine.Lose);
+                                }
                                 SaveData();
                                 Reset();
                                 gameState = GameState.Menu;
@@ -910,7 +970,6 @@ namespace GameJam
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             #endregion
 
-
             switch(gameState)
             {
                 case GameState.Menu:
@@ -1024,6 +1083,8 @@ namespace GameJam
             foreach(Dice die in dice)
             {
                 die.Value = -1000;
+                die.Max = false;
+                die.Min = false;
             }
         }
 
@@ -1091,18 +1152,44 @@ namespace GameJam
         }
 
         /// <summary>
-        /// Plays a voice line.
+        /// Plays the specified voice line.
         /// </summary>
-        /// <param name="good"> Whether or not it's a good voice line. </param>
-        public void PlayVoiceLine(bool good)
+        /// <param name="type"> The type of line we're playing. </param>
+        public void PlayVoiceLine(VoiceLine type)
         {
-            if(good)
+            switch(type)
             {
-                goodLines[rng.Next(0, goodLines.Length)].Play(1.0f, 0.0f, 0.0f);
-            }
-            else
-            {
-                badLines[rng.Next(0, goodLines.Length)].Play(1.0f, 0.0f, 0.0f);
+                case VoiceLine.WonARound:
+                    roundWinLines[rng.Next(0, 8)].Play();
+                    break;
+
+                case VoiceLine.NaturalOne:
+                    nat1Lines[rng.Next(0, 8)].Play();
+                    break;
+
+                case VoiceLine.NaturalTwenty:
+                    nat20Lines[rng.Next(0, 8)].Play();
+                    break;
+
+                case VoiceLine.Lose:
+                    gameOverLines[rng.Next(0, 8)].Play();
+                    break;
+
+                case VoiceLine.Title:
+                    titleEasterEggLines[rng.Next(0, 3)].Play();
+                    break;
+
+                case VoiceLine.LostOnRoundOne:
+                    lostOnRoundOne[rng.Next(0, 4)].Play();
+                    break;
+
+                case VoiceLine.Portrait:
+                    gamePortraitEasterEgg.Play();
+                    break;
+
+                case VoiceLine.RealBadRoll:
+                    realBadRoll.Play();
+                    break;
             }
         }
     }

@@ -1150,29 +1150,11 @@
 /processorParam:TextureFormat=Compressed
 /build:SmallJersey10.spritefont
 
-#begin SoundEffects/Bad1.wav
-/importer:WavImporter
+#begin SoundEffects/click.mp3
+/importer:Mp3Importer
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:SoundEffects/Bad1.wav
-
-#begin SoundEffects/Bad2.wav
-/importer:WavImporter
-/processor:SoundEffectProcessor
-/processorParam:Quality=Best
-/build:SoundEffects/Bad2.wav
-
-#begin SoundEffects/Bad3.wav
-/importer:WavImporter
-/processor:SoundEffectProcessor
-/processorParam:Quality=Best
-/build:SoundEffects/Bad3.wav
-
-#begin SoundEffects/Bad4.wav
-/importer:WavImporter
-/processor:SoundEffectProcessor
-/processorParam:Quality=Best
-/build:SoundEffects/Bad4.wav
+/build:SoundEffects/click.mp3
 
 #begin SoundEffects/diceRoll1.wav
 /importer:WavImporter
@@ -1204,29 +1186,251 @@
 /processorParam:Quality=Best
 /build:SoundEffects/diceRoll5.wav
 
-#begin SoundEffects/Good1.wav
-/importer:WavImporter
+#begin SoundEffects/RWHP_HunkusClick1.m4a
+/importer:Mp3Importer
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:SoundEffects/Good1.wav
+/build:SoundEffects/RWHP_HunkusClick1.m4a
 
-#begin SoundEffects/Good2.wav
-/importer:WavImporter
+#begin SoundEffects/RWHP_HunkusClick2.m4a
+/importer:Mp3Importer
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:SoundEffects/Good2.wav
+/build:SoundEffects/RWHP_HunkusClick2.m4a
 
-#begin SoundEffects/Good3.wav
-/importer:WavImporter
+#begin SoundEffects/RWHP_HunkusClick3.m4a
+/importer:Mp3Importer
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:SoundEffects/Good3.wav
+/build:SoundEffects/RWHP_HunkusClick3.m4a
 
-#begin SoundEffects/Good4.wav
-/importer:WavImporter
+#begin SoundEffects/RWHP_Loss1.m4a
+/importer:Mp3Importer
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:SoundEffects/Good4.wav
+/build:SoundEffects/RWHP_Loss1.m4a
+
+#begin SoundEffects/RWHP_Loss2.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss2.m4a
+
+#begin SoundEffects/RWHP_Loss3.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss3.m4a
+
+#begin SoundEffects/RWHP_Loss4.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss4.m4a
+
+#begin SoundEffects/RWHP_Loss5.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss5.m4a
+
+#begin SoundEffects/RWHP_Loss6.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss6.m4a
+
+#begin SoundEffects/RWHP_Loss7.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss7.m4a
+
+#begin SoundEffects/RWHP_Loss8.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Loss8.m4a
+
+#begin SoundEffects/RWHP_LostOnRoundOne1.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_LostOnRoundOne1.m4a
+
+#begin SoundEffects/RWHP_LostOnRoundOne2.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_LostOnRoundOne2.m4a
+
+#begin SoundEffects/RWHP_LostOnRoundOne3.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_LostOnRoundOne3.m4a
+
+#begin SoundEffects/RWHP_LostOnRoundOne4.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_LostOnRoundOne4.m4a
+
+#begin SoundEffects/RWHP_NaturalOne1.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne1.m4a
+
+#begin SoundEffects/RWHP_NaturalOne2.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne2.m4a
+
+#begin SoundEffects/RWHP_NaturalOne3.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne3.m4a
+
+#begin SoundEffects/RWHP_NaturalOne4.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne4.m4a
+
+#begin SoundEffects/RWHP_NaturalOne5.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne5.m4a
+
+#begin SoundEffects/RWHP_NaturalOne6.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne6.m4a
+
+#begin SoundEffects/RWHP_NaturalOne7.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne7.m4a
+
+#begin SoundEffects/RWHP_NaturalOne8.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalOne8.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty1.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty1.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty2.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty2.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty3.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty3.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty4.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty4.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty5.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty5.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty6.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty6.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty7.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty7.m4a
+
+#begin SoundEffects/RWHP_NaturalTwenty8.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_NaturalTwenty8.m4a
+
+#begin SoundEffects/RWHP_RealBadRoll.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_RealBadRoll.m4a
+
+#begin SoundEffects/RWHP_Sneeze.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Sneeze.m4a
+
+#begin SoundEffects/RWHP_Win1.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win1.m4a
+
+#begin SoundEffects/RWHP_Win2.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win2.m4a
+
+#begin SoundEffects/RWHP_Win3.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win3.m4a
+
+#begin SoundEffects/RWHP_Win4.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win4.m4a
+
+#begin SoundEffects/RWHP_Win5.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win5.m4a
+
+#begin SoundEffects/RWHP_Win6.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win6.m4a
+
+#begin SoundEffects/RWHP_Win7.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win7.m4a
+
+#begin SoundEffects/RWHP_Win8.m4a
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/RWHP_Win8.m4a
 
 #begin spaaaace.wav
 /importer:WavImporter
